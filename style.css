@@ -1,0 +1,228 @@
+/* DESIGN BY NGUYỄN VĂN TRÚC */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  color: #4e4e4e;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  overflow-x: hidden;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 14%;
+}
+.layer {
+  background-color: #ff7101;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  padding: 5px;
+}
+.container .contain {
+  display: grid;
+  justify-items: center;
+}
+
+/* PHẦN NAV */
+nav {
+  background-color: #ececec;
+}
+nav .bar {
+  padding: 7px 10px;
+  margin-top: 80px;
+  text-align: left;
+}
+nav .bar .row {
+  justify-content: left;
+}
+nav .bar small {
+  color: #ff7101;
+}
+
+/* PHẦN HEADER */
+header {
+  padding: 10px;
+  margin-top: 30px;
+}
+header .row {
+  background-color: #27bec5;
+  padding: 70px 90px;
+  align-items: unset;
+}
+header .post h1 {
+  color: #feffff;
+  font-size: 3em;
+  font-weight: 200;
+}
+header .post h2 {
+  color: #feffff;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding-top: 20px;
+}
+header .post h3 {
+  color: #feffff;
+  font-weight: 100;
+  padding-top: 20px;
+}
+header img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .btn {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ececec;
+  background-color: #ff7101;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+header .btn-left {
+  position: absolute;
+  top: 45%;
+  left: 13%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+}
+header .btn-right {
+  position: absolute;
+  top: 45%;
+  right: 13%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
+}
+
+/* PHẦN MAIN */
+main {
+  background-color: #e6e6e6;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+main .box {
+  border: solid 1px #d7d7d7;
+  background-color: #f7f7f7;
+  padding: 72px 20px;
+  justify-items: center;
+  text-align: center;
+  height: 169px;
+}
+main h3 {
+  color: #27bec5;
+  padding-bottom: 10px;
+}
+main .fa-2xl {
+  font-size: 65px;
+  vertical-align: 25px;
+}
+main .more {
+  text-align: center;
+  background-color: #27bec5;
+  box-shadow: 1px 1px 2px #888888;
+  padding: 10px;
+  margin: -20px;
+}
+main .more span {
+  color: #feffff;
+}
+.hover:hover {
+  box-shadow: 2px 2px 5px #888888;
+}
+
+/* PHẦN FOOTER */
+footer {
+  margin-top: 50px;
+}
+footer .row {
+  align-items: flex-start;
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+footer .layer {
+  background-color: #3e3e3e;
+}
+
+/* KHÁC */
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+}
+.logo h3 {
+  padding-left: 10px;
+  color: #feffff;
+}
+.bg-img {
+  text-align: center;
+}
+.topnav {
+  padding: 0 8%;
+  display: block;
+}
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #feffff;
+}
+li {
+  color: #feffff;
+}
+ul {
+  list-style: none;
+}
+ul.icons {
+  display: inline-flex;
+  text-align: right;
+  padding-left: 0;
+}
+.icons li {
+  padding: 20px 5px;
+}
+.info {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e6e6e6;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #676a6c;
+  display: block;
+  margin: 2px 0 5px 0;
+}
+.contract {
+  text-align: end;
+}
+
+#fixNav {
+  position: fixed;
+  width: -webkit-fill-available;
+  margin-top: 0;
+  z-index: 1000;
+  margin-top: -80px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
